@@ -1,0 +1,35 @@
+﻿<Window x:Class="SAMBIMdemo.ToggleCategoryUI"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        MinHeight="220"
+        MinWidth="650" xmlns:local="clr-namespace:SAMBIMdemo"
+        MaxHeight="300"
+        MaxWidth="1600" 
+    Title="Toggle Category Updater" Height="220" Width="650">
+    <Grid Background="#FF3B4453" Margin="0,0,-0.4,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="105"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="UpdateBtn" Content="Update" IsDefault="True" Grid.Row="5" Grid.Column="3" Margin="10" Foreground="#FFF5F5F6" Background="#FF3B4453" BorderBrush="#FF7C8BA1" Click="UpdateBtn_Click"/>
+        <Button x:Name="CancelBtn" Content="Cancel" Grid.Row="5" Grid.Column="5" Margin="10" IsCancel="True" Foreground="#FFF5F5F6" Background="#FF3B4453" BorderBrush="#FF7C8BA1" Click="CancelBtn_Click"/>
+        <ComboBox Name="CategoryList" Width="420" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" FontSize="24"/>
+        <TextBlock Text="Update Toggle Visibilty Button" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="Center"/>
+        <TextBlock Text="Category" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

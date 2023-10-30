@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command SAMBIMdemo</Text>
+    <Description>Demo BIM Commands for sample of Coding Skills</Description>
+    <Assembly>SAMBIMdemo.dll</Assembly>
+    <FullClassName>SAMBIMdemo.Command</FullClassName>
+    <ClientId>FB21186C-A9B0-46EE-A9A5-88B832D9421E</ClientId>
+    <VendorId>SAM BIM</VendorId>
+    <VendorDescription>Scott A Michaud</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application SAMBIMdemo</Name>
+    <Assembly>SAMBIMdemo.dll</Assembly>
+    <FullClassName>SAMBIMdemo.App</FullClassName>
+    <ClientId>F24E080E-75F0-4C6A-9DB6-B6A0F78DB69B</ClientId>
+    <VendorId>SAM BIM</VendorId>
+    <VendorDescription>Scott A Michaud</VendorDescription>
+  </AddIn>
+</RevitAddIns>
